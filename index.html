@@ -44,8 +44,8 @@
 
     <title>Hello World</title>
     <script>
-        function expandir(){
-            location.href='index2.html'+'#'+'nombre'+'#'+'tlf'+'#' +'calle'+'#'+'gps'
+        function expandir(nombre, tlf, calle, gps){
+            location.href='index2.html'+'#'+nombre+'#'+tlf+'#' +calle+'#'+gps
         }
     </script>
 </head>
@@ -62,7 +62,7 @@
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
-                            onClick="expandir()">Mas</button>
+                            onClick="expandir('aaaa','bbbb','cccc','dddd')">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>
@@ -79,7 +79,7 @@
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
-                            onClick="expandir()">Mas</button>
+                            onClick="expandir('eeee','ffff','gggg','hhhh')">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>
