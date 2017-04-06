@@ -47,6 +47,21 @@ var app = {
         console.log('Received Event: ' + id);
     },
     expandir: function(datos){
+        switch(datos){
+            case "Pablo":
+                window.location.href = "./index2.html"+ '#'+ 'Pablo Sanchez' + '#' + '698745123' + '#' + 'C/ Mayor' + '#'+ '+65º 37\' 20.11\", -52º 23\' 20\"' ;
+                break;
+            case "Ana":
+                window.location.href = "./index2.html"+ '#'+ 'Ana Rodriguez' + '#' + '654987321' + '#' + 'C/ de Arriba' + '#'+ '+5º 41\' 78.11\", +6º 23\' 20\"' ;
+                break;
+            case "Pedro":
+                window.location.href = "./index2.html"+ '#'+ 'Pedro Garcia' + '#' + '632457891' + '#' + 'Avenida Diagonal' + '#'+ '-55º 23\' 7.11\", +26º 65\' 11.2\"' ;
+                break;
+            case "Maria":
+                window.location.href = "./index2.html"+ '#'+ 'Maria Dominguez' + '#' + '985236147' + '#' + 'Paseo de Sorpresa' + '#'+ '-11º 65\' 23.11\", +46º 23\' 20\"' ;
+                break;
+            
+        }
         window.location.href = "./index2.html"+ '#'+datos;
     }
 };
