@@ -43,12 +43,17 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
 
     <title>Hello World</title>
+    <script>
+        function expandir(){
+            location.href='index2.html'+'#'+'nombre'+'#'+'tlf'+'#' +'calle'+'#'+'gps'
+        }
+    </script>
 </head>
 
 <body>
     <!-- https://demos.jquerymobile.com/1.2.0/docs/content/content-collapsible.html -->
     <div id="lista">
-        <div data-role="collapsible" data-content-theme="a"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+        <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
             <h4 class="nombre">Pablo Sanchez</h4>
             <div>
                 <label> 698745123 </label>
@@ -57,11 +62,11 @@
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
-                            onClick="app.expandir(Pablo)">Mas</button>
+                            onClick="expandir()">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>
-
+                
             </div>
         </div>
         
@@ -73,7 +78,8 @@
                 <label class="gps">+5º 41' 78.11", +6º 23' 20"</label>
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
-                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;">Mas</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
+                            onClick="expandir()">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>
@@ -88,7 +94,8 @@
                 <label class="gps">-55º 23' 7.11", +26º 65' 11.2"</label>
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
-                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;">Mas</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
+                            onClick="expandir()">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>
@@ -103,7 +110,8 @@
                 <label class="gps">-11º 65' 23.11", +46º 23' 20"</label>
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
-                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;">Mas</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
+                            onClick="expandir()">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>

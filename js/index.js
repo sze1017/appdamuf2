@@ -62,6 +62,5 @@ var app = {
                 break;
             
         }
-        window.location.href = "./index2.html"+ '#'+datos;
     }
 };
