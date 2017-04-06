@@ -113,3 +113,19 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+
+/*  --------------------------  Datos propios   ----------------------------- */ 
+
+.contenedor_botones{
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+}
+
+
+.div_relleno{
+    display: block; 
+    clear: both;
+}
+

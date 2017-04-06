@@ -39,19 +39,82 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
+
     <title>Hello World</title>
 </head>
 
 <body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+    <!-- https://demos.jquerymobile.com/1.2.0/docs/content/content-collapsible.html -->
+    <div id="lista">
+        <div data-role="collapsible" data-content-theme="a"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+            <h4 class="nombre">Pablo Sanchez</h4>
+            <div>
+                <label> 698745123 </label>
+                <label> C/ Mayor </label>
+                <label> +65º 37' 20.11", -52º 23' 20" </label>
+                <div class="contenedor_botones">
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
+                            onClick="app.expandir(Pablo Sanchez#698745123#C/ Mayor#+65º 37' 20.11, -52º 23' 20 )">Mas</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
+                </div>
+                <div class="div_relleno"></div>
+
+            </div>
         </div>
+        
+        <div data-role="collapsible">
+            <h4 class="nombre">Ana Rodriguez</h4>
+            <div>
+                <label class="tlf">654987321</label>
+                <label class="direccion">C/ de Arriba</label>
+                <label class="gps">+5º 41' 78.11", +6º 23' 20"</label>
+                <div class="contenedor_botones">
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;">Mas</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
+                </div>
+                <div class="div_relleno"></div>
+            </div>
+        </div>
+        
+        <div data-role="collapsible">
+            <h4 class="nombre">Pedro Garcia</h4>
+            <div>
+                <label class="tlf">63245789</label>
+                <label class="direccion">Avenida Diagonal</label>
+                <label class="gps">-55º 23' 7.11", +26º 65' 11.2"</label>
+                <div class="contenedor_botones">
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;">Mas</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
+                </div>
+                <div class="div_relleno"></div>
+            </div>
+        </div>
+        
+        <div data-role="collapsible">
+            <h4 class="nombre">Maria Dominguez</h4>
+            <div>
+                <label class="tlf">985236147</label>
+                <label class="direccion">Paseo de Sorpresa</label>
+                <label class="gps">-11º 65' 23.11", +46º 23' 20"</label>
+                <div class="contenedor_botones">
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;">Mas</button>
+                    <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
+                </div>
+                <div class="div_relleno"></div>
+            </div>
+        </div>
+        
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>

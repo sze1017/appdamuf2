@@ -45,5 +45,8 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+    expandir: function(datos){
+        window.location.href = "./index2.html"+ '#'+datos;
     }
 };
