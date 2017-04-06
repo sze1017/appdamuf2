@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
+        <title>Website Desarrollador</title>
+    </head>
+    <body>
+        <div class="app">
+            <div data-role="page" id="home">
+               <header data-role="header">
+                    <h1>Mas -> </h1>
+               </header>
+
+               <div data-role="content">
+                    <h3>Nombre</h3>
+                      <p>
+                        Telf:
+                      </p>
+                      <p>
+                        Dirección:
+                      </p>
+                      <p>
+                        GPS:
+                      </p>
+                      <p>
+                        Website:
+                      </p>    
+                      <div class="map" >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1492.5023741376167!2d1.995474233860564!3d41.56914183609803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492a498d7ba21%3A0xc698f1cc3628032a!2sCarrer+de+Torrent+del+Batlle%2C+08225+Terrassa%2C+Barcelona!5e0!3m2!1ses!2ses!4v1488791571435" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+                    </div>
+                    <a href="#enMaps" class="ui-shadow ui-btn ui-corner-all">Abrir en Maps</a>
+                    <a href="#salir" class="ui-shadow ui-btn ui-corner-all">Cerrar</a>
+               </div>
+            </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
