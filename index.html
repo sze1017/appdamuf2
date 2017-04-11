@@ -43,11 +43,21 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
 
     <title>Hello World</title>
+    
+
     <script>
-        function expandir(nombre, tlf, calle, gps){
-            location.href='index2.html'+'#'+nombre+'#'+tlf+'#' +calle+'#'+gps
+        function expandir(nombre, tlf, calle, gps, mapa){
+            var value1=nombre;
+            var value2=tlf;
+            var value3=calle;
+            var value4=gps;
+            var value5=mapa;
+            var queryString = "?para1=" + value1 + "&para2=" + value2 + "&para3=" + value3 + "&para4=" + value4 + "&para5=" + value5;
+            window.location.href = "index2.html" + queryString;
         }
-    </script>
+            
+            
+    </script> 
 </head>
 
 <body>
@@ -59,17 +69,17 @@
                 <label> 698745123 </label>
                 <label> C/ Mayor </label>
                 <label> +65º 37' 20.11", -52º 23' 20" </label>
+                <var>
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
-                            onClick="expandir('aaaa','bbbb','cccc','dddd')">Mas</button>
+                            onClick="expandir('Pablo Sanchez','698745123','C/ Mayor','+65º 37&rsquo; 20.11&quot -52º 23&rsquo; 20&quot','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1645780.17003676!2d-52.004367373026135!3d66.2449624848073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjXCsDM3JzIwLjEiTiA1MsKwMjMnMjAuMCJX!5e0!3m2!1ses!2ses!4v1491918943965')">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>
                 
             </div>
         </div>
-        
         <div data-role="collapsible">
             <h4 class="nombre">Ana Rodriguez</h4>
             <div>
@@ -79,39 +89,37 @@
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
-                            onClick="expandir('eeee','ffff','gggg','hhhh')">Mas</button>
+                            onClick="expandir('Ana Rodriguez','654987321','C/ de Arriba','+5º 41&rsquo; 78.11&quot +6º 23&rsquo; 20&quot','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127042.91017021978!2d6.329962153516923!3d5.699999995868613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNDInMDAuMCJOIDbCsDI0JzAwLjAiRQ!5e0!3m2!1ses!2ses!4v1491920376776')">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>
             </div>
         </div>
-        
         <div data-role="collapsible">
             <h4 class="nombre">Pedro Garcia</h4>
             <div>
                 <label class="tlf">632457891</label>
                 <label class="direccion">Avenida Diagonal</label>
-                <label class="gps">-55º 23' 7.11", +26º 65' 11.2"</label>
+                <label class="gps">-55º 23' 7.11", +26º 59' 11.2"</label>
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
-                            onClick="expandir()">Mas</button>
+                            onClick="expandir('Pedro Garcia','632457891','Avenida Diagonal','-55º 23&rsquo; 7.11&quot +26º 59&rsquo; 11.2&quot','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37138262.09579299!2d-8.85937575603291!3d-55.379999980455246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDIyJzQ4LjAiUyAyN8KwMDAnMDAuMCJF!5e0!3m2!1ses!2ses!4v1491920777158')">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>
             </div>
         </div>
-        
         <div data-role="collapsible">
             <h4 class="nombre">Maria Dominguez</h4>
             <div>
                 <label class="tlf">985236147</label>
                 <label class="direccion">Paseo de Sorpresa</label>
-                <label class="gps">-11º 65' 23.11", +46º 23' 20"</label>
+                <label class="gps">-11º 59' 23.11", +46º 23' 20"</label>
                 <div class="contenedor_botones">
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-right: 1%;">Llama</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 0.5%; margin-right: 0.5%;"
-                            onClick="expandir()">Mas</button>
+                            onClick="expandir('Maria Dominguez','985236147','Paseo de Sorpresa','-11º 59&rsquo; 23.11&quot +46º 23&rsquo; 20&quot','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3996294.3667512517!2d43.7587890122036!3d-11.999999991498445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAwJzAwLjAiUyA0NsKwMDAnMDAuMCJF!5e0!3m2!1ses!2ses!4v1491921130704')">Mas</button>
                     <button class="boton_extra" style="float: left; width: 32%; border-radius: 5px; margin-left: 1%;">Editar</button>
                 </div>
                 <div class="div_relleno"></div>

@@ -10,38 +10,85 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
         <title>Website Desarrollador</title>
+
+    <script type="text/javascript">
+      
+
+      function displayNombre() {
+          var nombre;
+          var telefono;
+          var direccion;
+          var coord;
+          var source;
+
+          var queryString = decodeURIComponent(window.location.search);
+          queryString = queryString.substring(1);
+          var queries = queryString.split("&");
+          
+          for (var i = 0; i < queries.length; i++){
+            if (i == 0){
+                nombre = queries[i];
+            }
+            else if(i == 1){
+                telefono = queries[i];
+            }
+            else if (i == 2){
+              direccion = queries[i];
+            }
+            else if (i == 3){
+              coord = queries[i];
+            }
+            else if (i == 4){
+              source = queries[i];
+            }
+          }
+          nombre = nombre.replace('para1=','');
+          telefono = telefono.replace('para2=','');
+          direccion = direccion.replace('para3=','');
+          coord = coord.replace('para4=','');
+          source = source.replace('para5=','');
+      
+          document.getElementById("nom").innerHTML ="MAS -> " + nombre;
+          document.getElementById("telf").innerHTML ="Telf: " + telefono;
+          document.getElementById("direc").innerHTML ="Dirección: " + direccion;
+          document.getElementById("gps").innerHTML = "GPS: " + coord;
+          document.getElementById('myIframe').src = source;
+      }
+      function volver(){
+        window.location.href = "index.html";
+      }
+      </script> 
+
     </head>
-    <body>
-        <div class="app">
+
+    <body onload="displayNombre()">
+      
+        <div>
             <div data-role="page" id="home">
                <header data-role="header">
-                    <h1>Mas -> </h1>
+                    <h1 id="nom"></h1>
                </header>
 
-               <div data-role="content">
-                    <h3>Nombre</h3>
-                      <p>
-                        Telf:
-                      </p>
-                      <p>
-                        Dirección:
-                      </p>
-                      <p>
-                        GPS:
-                      </p>
+              <div data-role="content">
+                    
+                      <b id="telf"></b>
+                    </br>
+                      <b id="direc"></b>
+                    </br>
+                      <b id="gps"></b>
                       <p>
                         Website:
                       </p>    
                       <div class="map" >
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1492.5023741376167!2d1.995474233860564!3d41.56914183609803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492a498d7ba21%3A0xc698f1cc3628032a!2sCarrer+de+Torrent+del+Batlle%2C+08225+Terrassa%2C+Barcelona!5e0!3m2!1ses!2ses!4v1488791571435" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
-                    </div>
+                        <iframe id="myIframe" src="//maps.google.com" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+                      </div>
                     <a href="#enMaps" class="ui-shadow ui-btn ui-corner-all">Abrir en Maps</a>
-                    <a href="#salir" class="ui-shadow ui-btn ui-corner-all">Cerrar</a>
-               </div>
-            </div>
+                    <a href="#salir" class="ui-shadow ui-btn ui-corner-all" onClick="volver()">Cerrar</a>
+               
+              </div>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+        
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.mobile.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
